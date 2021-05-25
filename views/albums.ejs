@@ -13,12 +13,15 @@
     <h2><a href="/albums">Albums</a></h2>
     
     <!-- for albums -->
-    <% for( let i = 0; i < jennysData.albums.length; i++ ) { %>
-        <a href="<%=jennysData.albums[i].index%>"><img src="<%= jennysData.albums[i].imgURL %>" alt="" height="200px"></a><br>
     
-    <% } %>
+        <% for( let i = 0; i < jennysData.albums.length; i++ ) { %>
+            <a href="albums/<%=jennysData.albums[i].index%>"><img src="<%= jennysData.albums[i].imgURL %>" alt="" height="200px"></a><br>
+        
+        <% } %>
+    
 
     <!-- for albums/index -->
+    <% if(albumDetails.length || Object.keys(albumDetails).length){ %> 
 
     <h1><%= albumDetails.name %> </h1>
     <img src="<%=albumDetails.imgURL%>" alt="" height="350px">
@@ -29,6 +32,7 @@
         <li><%=albumDetails.songTitles[i]%></li>
     <% } %>
     </ul>
+   <% } %> 
     
 </body>
 </html>
