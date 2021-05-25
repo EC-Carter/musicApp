@@ -7,8 +7,8 @@
 
     "url": "https://en.wikipedia.org/wiki/The_Wailin%27_Jennys",
     
-    "albums":{
-        "40days":{
+    "albums":[
+        {   "index":0,
             "name":"40days",
             "publishDate":"August 10, 2004",
             "label":"Red House Records",
@@ -16,7 +16,8 @@
             "songTitles":["One Voice","Saucy Sailor","Arlington","Beautiful Dawn","Untitled","This is Where","Old Man",	"Heaven When We're Home","Ten Mile Stilts","Come All You Sailors","Take it Down","Something to Hold Onto","The Parting Glass"]
         },
     
-        "firecracker":{
+        {   
+            "index":1,
             "name":"Firecracker",
             "publishDate":"June 6, 2006",
             "label":"Red House Records",
@@ -25,7 +26,8 @@
         
         },
 
-        "live":{
+        {   
+            "index":2,
             "name":"Live at the Mauch Chunk Opera House",
             "publishDate":"August 11, 2009",
             "label":"Red House Records",
@@ -34,7 +36,7 @@
             ,"Paint A Picture","Intro To Begin","Begin","Motherless Child","Calling All Angels","Intro To One Voice","One Voice"]
         
         },
-        "brightMorningStars":{
+        {    "index":3,
             "name":"Bright Morning Stars",
             "publishDate":"February 8, 2011",
             "label":"Red House Records",
@@ -42,7 +44,7 @@
             "songTitles":["Swing Low Sail High","All the Stars","Bird Song","Away But Never Gone","Storm Comin'","Mona Louise","Bright Morning Stars","Across the Sea","Asleep at Last","What Has Been Done","Cherry Blossom Love","You Are Here","Last Goodbye"]
         
         },
-        "fifteen":{
+        {   "index":4,
             "name":"Fifteen",
             "publishDate":"October 27, 2017",
             "label":"Red House Records",
@@ -50,6 +52,6 @@
             "songTitles":["Old Churchyard","Wildflowers","The Valley","Light of a Clear Blue Morning","Loves Me Like a Rock","Boulder to Birmingham","Not Alone","Keep Me In Your Heart","Weary Blues from Waitin'"]
         
         }
-}
+    ]
 
 }

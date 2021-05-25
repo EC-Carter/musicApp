@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Albums</title>
 </head>
+
 <body>
+    <!-- placeholder nav -->
     <h2><a href="/">Home</a></h2>
+    <h2><a href="/albums">Albums</a></h2>
     
-    <!-- <a href="albums/0"><img src="<%= jennysData.albums.40days.imgURL %>" alt="" height="350px"></a>
-    <a href="albums/1"><img src="<%= jennysData.albums.firecracker.imgURL %>" alt="" height="350px"></a> -->
+    <!-- for albums -->
+    <% for( let i = 0; i < jennysData.albums.length; i++ ) { %>
+        <a href="<%=jennysData.albums[i].index%>"><img src="<%= jennysData.albums[i].imgURL %>" alt="" height="200px"></a><br>
     
-    <% for( let i = 0; i < albums.length; i++ ) { %>
-        <!-- <a href="albums/albums[i]"><img src="<%= jennysData.albums[i].imgURL %>" alt="" height="350px"></a><br> -->
-        <%= jennysData.albums[i].imgURL %>
     <% } %>
-    
-    
+
+    <!-- for albums/index -->
+
+    <h1><%= albumDetails.name %> </h1>
+    <img src="<%=albumDetails.imgURL%>" alt="" height="350px">
+    <h2><%= albumDetails.publishDate %> </h2>
+    <h2><%= albumDetails.label %></h2>
+    <ul>
+    <% for( let i = 0; i < albumDetails.songTitles.length; i++ ) { %>
+        <li><%=albumDetails.songTitles[i]%></li>
+    <% } %>
+    </ul>
     
 </body>
 </html>
