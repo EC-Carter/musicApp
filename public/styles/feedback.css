@@ -1,0 +1,62 @@
+.formFlex{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+#feedbackForm{
+    /* background-color: orange; */
+    background-color: rgba(252, 236, 185, 0.365);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-left:2em; */
+    /* width:50%; */
+}
+
+.formDiv{
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+    
+}
+
+input{
+    width:300px;
+    height:30px;
+}
+textarea{
+    /* width:50%; */
+    width:300px;
+}
+#formButton{
+    border:none;
+    font-family: inherit;
+    width:100px;
+    height:30px;
+    margin:10px;
+    background-color: rgb(252, 238, 193);
+}
+#formButton:hover{
+    background-color: rgb(252, 236, 185);
+}
+#messageDisp{
+    background-color: rgba(252, 236, 185, 0.365);
+    width:320px;
+}
+.comment{
+    background-color: white;
+    color:black;
+    margin:10px;
+}
+.comment p {
+    /* background-color: tan; */
+    padding-left:10px;
+    margin:0px;
+    
+}
+.commentMessage{
+    background-color: purple;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+

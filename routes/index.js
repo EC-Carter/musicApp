@@ -6,7 +6,8 @@ let jennysData = require('../data/data.json');
 
 router.get('/',(req,res)=>{
     res.render('index',{
-        jennysData:jennysData
+        jennysData:jennysData,
+        pageTitle:"The Wailin' Jennys"
     })
 })
 

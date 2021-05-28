@@ -4,19 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/14da7fdb9f.js" crossorigin="anonymous"></script>
+    <title><%= pageTitle %> </title>
+    <link rel="stylesheet" href="../styles/main.css">
+
 </head>
 <body>
+    <header>
+        <%- include ('partials/content/header.ejs') %> 
+    </header>
 
 
-    <h1>The Wailin' Jennys</h1>
-    <h2><a href="/albums">Albums</a></h2>
-    <img src="/images/jennys1.jpg" height="300px">
-    <p><%= jennysData.text1 %> </p>
-    <p><%= jennysData.text2 %> </p>
-    <p><%= jennysData.text3 %> </p>
-    <img src="/images/jennys2.jpeg" height="200px"><br><br>
-    <a href="<%= jennysData.url %> ">Wailin' Jennys Wikipedia</a>
+    
+    <main>
+    <div class="bandImages">
+    <img src="/images/jennys1.jpg" height="300px" class="img1">
+    <img src="/images/jennys2.jpeg" height="200px" class="img2">
+    </div>
+    <div class="bandBio">
+    <p class="bioText"><%= jennysData.text1 %> </p>
+    <p class="bioText"><%= jennysData.text2 %> </p>
+    <p class="bioText"><%= jennysData.text3 %> </p>
+    <a href="<%= jennysData.url %> " class="wikipedia">Wailin' Jennys Wikipedia</a>
+    </div>
+    </main>     
+
+    <footer>
+        
+    </footer>
+    
     
 </body>
 </html>

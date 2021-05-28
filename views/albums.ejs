@@ -4,35 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Albums</title>
+    <script src="https://kit.fontawesome.com/14da7fdb9f.js" crossorigin="anonymous"></script>
+    <title><%= pageTitle %> </title>
+    <link rel="stylesheet" href="../styles/main.css">
 </head>
 
 <body>
-    <!-- placeholder nav -->
-    <h2><a href="/">Home</a></h2>
-    <h2><a href="/albums">Albums</a></h2>
-    
-    <!-- for albums -->
-    
-        <% for( let i = 0; i < jennysData.albums.length; i++ ) { %>
-            <a href="albums/<%=jennysData.albums[i].index%>"><img src="<%= jennysData.albums[i].imgURL %>" alt="" height="200px"></a><br>
-        
-        <% } %>
-    
+    <header>
+        <%- include ('partials/content/header.ejs') %> 
+    </header>
 
-    <!-- for albums/index -->
-    <% if(albumDetails.length || Object.keys(albumDetails).length){ %> 
+    <main>
+       
+            <% if(!albumDetails){ %> 
+            <div class="albums">
+                <% for( let i = 0; i < jennysAlbums.length; i++ ) { %>
+                <a href="/albums/<%=jennysAlbums[i].index%>" class="albumMenu"><img src="<%= jennysAlbums[i].imgURL %>" alt="" height="200px"></a>
+            
+                <% } %> 
+            </div>
+                <% }else{ %> 
+                    <div class="albumDetail">
+                    <div class="albumDleft">
+                    <h2 class=""><%= albumDetails.name %> </h2>
+                    <h3 class=""><%= albumDetails.publishDate %></h3>
+                    <h3 class=""><%= albumDetails.label %></h3>
+                    </div>
 
-    <h1><%= albumDetails.name %> </h1>
-    <img src="<%=albumDetails.imgURL%>" alt="" height="350px">
-    <h2><%= albumDetails.publishDate %> </h2>
-    <h2><%= albumDetails.label %></h2>
-    <ul>
-    <% for( let i = 0; i < albumDetails.songTitles.length; i++ ) { %>
-        <li><%=albumDetails.songTitles[i]%></li>
-    <% } %>
-    </ul>
-   <% } %> 
+                    <img src="<%=albumDetails.imgURL %> " alt="" height="350px">
+
+                    <div class="tracks">
+                        <h3>Tracks</h3>
+                    <ol>
+                    <% albumDetails.songTitles.forEach(song =>{ %> 
+                        <li><%= song %> </li>
+                    <% }) %> 
+                    </ol>
+                    </div>
+                </div>
+                <% } %>
+       
+    </main>
+
+
     
 </body>
 </html>

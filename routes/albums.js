@@ -3,21 +3,27 @@
 const express = require('express');
 const router = express.Router();
 let jennysData = require('../data/data.json');
+let albums = jennysData.albums;
+
 
 router.get('/albums',(req,res)=>{
     res.render('albums',{
-        jennysData:jennysData,
-        albumDetails:[],
-        
+        jennysAlbums:albums,
+        albumDetails:null,
+        pageTitle:"Albums"
+
     })
+    
 })
 
 router.get('/albums/:index',(req,res)=>{
-    let album = req.params.index;
+    let index = req.params.index;
     
     res.render('albums',{
-        jennysData:jennysData,
-        albumDetails:jennysData.albums[album],
+        jennysAlbums:albums,
+        albumDetails:albums[index],
+        pageTitle:`Albums - ${albums[index].name} `
+        
 
     })
 

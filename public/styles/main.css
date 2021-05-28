@@ -1,0 +1,104 @@
+body{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    color:white;
+    width:100vw;
+    height:100vh;
+
+}
+/* header and nav*/
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    margin-top: 2em;
+}
+
+.main-nav{
+    
+    display:flex;
+}
+.main-nav li{    
+    list-style-type: none;
+    padding:10px;
+}
+.nav-links{
+    color:inherit;
+    text-decoration: none;
+    font-size: 1.5em;
+
+}
+.nav-links:hover{
+    color:rgb(252, 238, 193);
+}
+
+
+.bandImages{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.img1,.img2{
+    /* box-shadow:3px 3px 3px 10px grey; */
+}
+
+.bandBio{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bioText{
+    width:90%;
+}
+.wikipedia{
+    text-decoration: none;
+    color:white;
+    margin-bottom: 2em;
+}
+.wikipedia:hover{
+    color:rgb(252, 238, 193);
+}
+.albums{
+    display:flex;
+    flex-wrap: wrap;
+    background-color:white;
+    align-items: center;
+    justify-content: center;
+}
+.albumMenu{
+    padding:10px;
+    
+}
+.albumMenu:hover{
+    border:3px solid black
+}
+
+.albumDetail{
+    background-color: pink;
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+}
+.albumDleft{
+    background-color: red;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.tracks{
+    background-color: red;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+}
+
