@@ -25,13 +25,14 @@
             </div>
                 <% }else{ %> 
                     <div class="albumDetail">
+                        
                     <div class="albumDleft">
-                    <h2 class=""><%= albumDetails.name %> </h2>
-                    <h3 class=""><%= albumDetails.publishDate %></h3>
-                    <h3 class=""><%= albumDetails.label %></h3>
+                    <h2 class="albumInfo"><%= albumDetails.name %> </h2>
+                    <h4 class="albumInfo"><%= albumDetails.publishDate %></h4>
+                    <h5 class="albumInfo"><%= albumDetails.label %></h5>
                     </div>
 
-                    <img src="<%=albumDetails.imgURL %> " alt="" height="350px">
+                    <img src="<%=albumDetails.imgURL %> " alt="" id="albumCover" height="350px">
 
                     <div class="tracks">
                         <h3>Tracks</h3>

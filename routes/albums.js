@@ -20,6 +20,7 @@ router.get('/albums/:index',(req,res)=>{
     let index = req.params.index;
     
     res.render('albums',{
+        
         jennysAlbums:albums,
         albumDetails:albums[index],
         pageTitle:`Albums - ${albums[index].name} `

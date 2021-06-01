@@ -81,24 +81,33 @@ header{
 }
 
 .albumDetail{
-    background-color: pink;
+    /* background-color: pink; */
     display:flex;
     justify-content: center;
     align-items:center ;
+    flex-direction: column;
 }
 .albumDleft{
-    background-color: red;
+    /* background-color: red; */
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
 }
 .tracks{
-    background-color: red;
+    /* background-color:green; */
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
 
+}
+.albumInfo{
+ padding:0px;
+ margin:5px;
+}
+
+.albumDleft{
+    margin-bottom:10px;
 }
 

@@ -1,19 +1,21 @@
 .formFlex{
+    background-color: turquoise;
     display:flex;
     justify-content: space-evenly;
 }
 
 #feedbackForm{
-    /* background-color: orange; */
-    background-color: rgba(252, 236, 185, 0.365);
+    background-color: orange;
+    /* background-color: rgba(252, 236, 185, 0.365); */
     display:flex;
     flex-direction: column;
     align-items: center;
     /* padding-left:2em; */
-    /* width:50%; */
+    width:30%;
 }
 
 .formDiv{
+    background-color: yellow;
     display:flex;
     flex-direction: column;
     padding:10px;
@@ -26,7 +28,7 @@ input{
 }
 textarea{
     /* width:50%; */
-    width:300px;
+    width:85%;
 }
 #formButton{
     border:none;
@@ -41,7 +43,7 @@ textarea{
 }
 #messageDisp{
     background-color: rgba(252, 236, 185, 0.365);
-    width:320px;
+    width:50%;
 }
 .comment{
     background-color: white;
